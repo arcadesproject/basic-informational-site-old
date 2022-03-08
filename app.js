@@ -30,8 +30,7 @@ app.get('*', (req, res) => {
 });
 
 app.get('about-me', (req, res) => {
-  res.status(301);
-  res.render('about');
+  res.redirect(301, 'about');
 });
 
 app.listen(port, () => {
