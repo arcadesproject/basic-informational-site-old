@@ -1,0 +1,14 @@
+html 
+  head 
+    title= title
+  body 
+    h2= message
+    form
+      label(for='mail') Email:
+        input(name='mail', type='email')
+      br
+      label(for='comment')
+        textarea(name='comment', cols='50', rows='10') 
+    br
+    p
+      a(href='/') Home
